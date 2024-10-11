@@ -42,23 +42,6 @@ or,
 
 ---
 
-## How it Works
-
-- **Keyboard Listener**: The script listens for all keypress events on your keyboard.
-- **Logging to File**: Every keypress is logged to a file called `keyfile.txt`.
-- **Space Handling**: The script explicitly handles space keypresses to avoid errors.
-
----
-
-## Code Explanation
-
-The script does the following:
-
-1. Imports `pynput` to listen to keyboard inputs.
-2. Defines the `keyPressed` function that writes the keypresses to `keyfile.txt`.
-3. Handles regular and special keys (like spaces) using the `hasattr()` function.
-4. Starts the keyboard listener and keeps the script running with `input()`.
-
 ### Example of key logging:
 
 If you type "Hello World", the content of `keyfile.txt` will be:
