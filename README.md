@@ -7,10 +7,6 @@ This is a simple keylogger script written in Python using the `pynput` library. 
 - Logs all key presses into a text file.
 - Supports both regular keys (e.g., letters, numbers) and special keys (e.g., space).
 
-## Prerequisites
-
-Before running the script, make sure you have Python installed. You can download it from [here](https://www.python.org/downloads/).
-
 ## Installation
 
 You need to install the `pynput` library, which allows the program to listen to keyboard inputs. You can install it using the following commands, depending on your operating system:
@@ -36,6 +32,11 @@ pip install pynput
     ```bash
     python keylogger_friendly.py
     ```
+or,
+
+   ```bash   
+    py keylogger_friendly.py
+   ```
 
 4. The program will start logging keystrokes in the background. It will create or append to a file called `keyfile.txt` in the same directory as the script.
 
